@@ -1,0 +1,171 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("back.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    align-items: stretch;
+}
+
+.photo-left {
+    flex: 1; /* This will make the photo-left div take up the available space */
+}
+
+.side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #4b2c86;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+    color: #4b2c86;
+}
+
+label {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile{
+    width: 80%;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4b2c86;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #4b2c86;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #382064;
+}
+
+a {
+    color: #4b2c86;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #382064;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 40%;
+}
+
+/* Login and Sign-up styles */
+form {
+    background-color: #f3f2f4;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+form label {
+    font-size: 18px;
+    color: #777;
+}
+
+form input{
+    font-size: 18px;
+}
+
+form p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .photo-left {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
